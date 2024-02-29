@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="register-container">
+    <div class="register-rectangle">
+      <h2>CREATE AN ACCOUNT</h2>
+      <div>
+<ion-label position="floating" id="email-label">Email</ion-label>
+        <ion-input type="email" name="email"></ion-input>
+      </div>
+      <div>
+        <ion-label position="floating" id="password-label">Password</ion-label>
+        <ion-input type="password" name="password"></ion-input>
+      </div>
+      <div>
+        <ion-label position="floating" id="confirm-password-label">Confirm Password</ion-label>
+        <ion-input type="password" name="confirm-password"></ion-input>
+      </div>
+      <ion-button expand="block" color="#6236FF" name="signup">Sign Up</ion-button>
+      <ion-label id="sign-up-3">Already a member?</ion-label><ion-label id="sign-up-4"> Log in</ion-label>
+     <div class="bordures-container">
+        <div (click)="PageSelected = true" [class]="{'bordure2': true, 'couleur-active': PageSelected}" class="button"></div>
+        <div (click)="PageSelected = false" [class]="{'bordure1': true, 'couleur-active': !PageSelected}" class="button"></div>
+      </div> 
+       
+      
+    </div>
+  </div>
+</ion-content>
+
+
