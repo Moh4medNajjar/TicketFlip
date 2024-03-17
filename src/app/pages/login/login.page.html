@@ -2,19 +2,28 @@
   <div class="login-container">
     <div class="login-rectangle">
       <h2>LOGIN</h2>
+
+
+<form  (ngSubmit)="login()" [formGroup]="credentials">
       <div>
 <ion-label position="floating" id="email-label">Email</ion-label>
-        <ion-input type="email" name="email"></ion-input>
+        <ion-input type="email" name="email" formControlName="email"></ion-input>
+        <ion-note slot="error" *ngIf="(email?.dirty) && email?.errors">Email is invalid</ion-note>
       </div>
       <div>
         <ion-label position="floating" id="password-label">Password</ion-label>
-        <ion-input type="password" name="password"></ion-input>
+        <ion-input type="password" name="password" formControlName="password"></ion-input>
+        <ion-note slot="error" *ngIf="(password?.dirty || password?.touched) && password?.errors">Password needs to be 6 characters</ion-note>
       </div>
       <div>
         <ion-label id="pass-forgot">Forgot my password</ion-label>
         </div>
-      <ion-button expand="block" color="#6236FF" name="login">Log in</ion-button>
-      <ion-label id="sign-up">Don't have an account?</ion-label><ion-label id="sign-up-2">Sign Up</ion-label>
+      <ion-button type="submit" expand="block" color="#6236FF" name="login">Log in</ion-button>
+</form>
+
+      <ion-label id="sign-up">Don't have an account? </ion-label><ion-label id="sign-up-2"><a href="/register">Sign Up</a></ion-label>
+
+
       <div class="bordures-container">
         <div (click)="PageSelected = true" [class]="{'bordure1': true, 'couleur-active': PageSelected}" class="button"></div>
         <div (click)="PageSelected = false" [class]="{'bordure2': true, 'couleur-active': !PageSelected}" class="button"></div>

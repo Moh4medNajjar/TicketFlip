@@ -2,19 +2,26 @@
   <div class="register-container">
     <div class="register-rectangle">
       <h2>CREATE AN ACCOUNT</h2>
+
+      <form  (ngSubmit)="register()" [formGroup]="credentials">
       <div>
 <ion-label position="floating" id="email-label">Email</ion-label>
-        <ion-input type="email" name="email"></ion-input>
+<ion-input type="email" name="email" formControlName="email"></ion-input>
+        <ion-note slot="error" *ngIf="(email?.dirty) && email?.errors">Email is invalid</ion-note>
       </div>
       <div>
         <ion-label position="floating" id="password-label">Password</ion-label>
-        <ion-input type="password" name="password"></ion-input>
+        <ion-input type="password" name="password" formControlName="password"></ion-input>
+        <ion-note slot="error" *ngIf="(password?.dirty || password?.touched) && password?.errors">Password needs to be 6 characters</ion-note>
       </div>
       <div>
         <ion-label position="floating" id="confirm-password-label">Confirm Password</ion-label>
         <ion-input type="password" name="confirm-password"></ion-input>
       </div>
-      <ion-button expand="block" color="#6236FF" name="signup">Sign Up</ion-button>
+
+      <ion-button type="submit" expand="block" color="#6236FF" name="signup">Sign Up</ion-button>
+
+</form>
       <ion-label id="sign-up-3">Already a member?</ion-label><ion-label id="sign-up-4"> Log in</ion-label>
      <div class="bordures-container">
         <div (click)="PageSelected = true" [class]="{'bordure2': true, 'couleur-active': PageSelected}" class="button"></div>
