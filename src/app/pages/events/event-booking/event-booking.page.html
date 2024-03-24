@@ -1,0 +1,25 @@
+<ion-content>
+  <div class="evbooking-layout">
+  <ion-card class="evbooking-container">
+    <img src="../../../../assets/event.jpeg" alt="Event Image">
+  </ion-card>
+  <h2>Royal Hall Concert</h2>
+  <div class="event-details">
+    <ion-icon name="calendar-outline"></ion-icon>
+    <div class="details">
+      <h3>June 22, 2024</h3>
+      <h4>Main concert hall</h4>
+    </div>
+    <h5>4:00 PM - 6:00 PM</h5>
+  </div>
+    <div class="event-booking">
+      <h1>Tickets</h1>
+      <div class="ticket-selector">
+        <ion-button (click)="decrement()" color="white"><ion-icon name="remove-circle-outline"></ion-icon></ion-button>
+        <ion-input [(ngModel)]="number" type="number" class="number-input"></ion-input>
+        <ion-button (click)="increment()" color="white"><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+  </div>
+  </div>
+<ion-button color="#6236FF" name="pay">Proceed to payment</ion-button>
+</div>
+</ion-content>

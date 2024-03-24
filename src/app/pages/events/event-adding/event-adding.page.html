@@ -1,0 +1,49 @@
+<ion-content>
+  <div class="avatar-container">
+    <ion-avatar>
+      <img src="../../../../assets/avatar.png" alt="Avatar">
+    </ion-avatar>
+    <ion-label>Hamdi Baccar</ion-label>
+  </div>
+  <div class="events">
+    <h2>Your events</h2>
+    <ion-button id="plus" color="white"><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+  </div>
+  <div class="adding-layout">
+    <ion-label position="floating">Title</ion-label>
+    <ion-input [(ngModel)]="event.title" type="text" name="title" id="title"></ion-input>
+
+    <ion-label position="floating">Category</ion-label>
+    <ion-select [(ngModel)]="event.category" name="category" id="category">
+      <ion-select-option value="concert">Concert</ion-select-option>
+      <ion-select-option value="workshop">Workshop</ion-select-option>
+      <ion-select-option value="meeting">Meeting</ion-select-option>
+    </ion-select>
+    <ion-label position="floating" aria-label="Ticket Price">Ticket Price</ion-label>
+    <ion-input [(ngModel)]="event.price" type="number"  name="price" id="price"></ion-input>
+  
+
+  
+    <ion-label position="floating" aria-label="Max Tickets">Max Tickets</ion-label>
+    <ion-input [(ngModel)]="event.maxTickets" type="number" name="tickets" id="tickets"></ion-input>
+  
+
+  
+    <ion-label position="floating" aria-label="Start Date">Start Date</ion-label>
+    <ion-input [(ngModel)]="event.startDate" type="date"  name="date" id="date"></ion-input>
+  
+
+  
+    <ion-label position="floating" aria-label="Start Time">Start Time</ion-label>
+    <ion-input [(ngModel)]="event.startTime" type="time" name="time" id="time"></ion-input>
+  
+
+  
+    <ion-label position="floating" aria-label="Place">Place</ion-label>
+    <ion-input [(ngModel)]="event.place" type="text"  name="place" id="place"></ion-input>
+<div class="buttons">
+  <ion-button (click)="createEvent()" name="create">Create Event</ion-button>
+  <ion-button (click)="cancel()" name="cancel">Cancel</ion-button>
+</div>
+</div>
+</ion-content>
