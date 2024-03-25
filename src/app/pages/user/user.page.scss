@@ -1,0 +1,75 @@
+.fa-bars, .fa-bell{
+    font-size: 26px;
+  }
+  .fa-circle-plus{
+    font-size:22px
+  }
+  .hostedevent{
+    border-radius: 12px;
+    margin:8px 10px;
+    max-width:44%;
+    height:auto
+  }
+  
+  .hostedevent img{
+    border-radius: 12px;
+  }
+  
+  .fa-trash-can, .fa-pencil, .fa-pen-to-square{
+    font-size:20px
+  }
+  .hostedevent {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .twoicons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .button-container .button {
+    margin: 10px;
+  }
+  
+  .button-container img {
+    margin: 10px;
+    height: 20px;
+  }
+  
+  .text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .text-container .text p {
+    text-align: start;
+    margin: 0 0!important;
+  }
+  .category{
+    background-color:white; border-radius:6px; color:#121212; padding:4px 10px;
+  
+  }
+  
+  
+  
+  

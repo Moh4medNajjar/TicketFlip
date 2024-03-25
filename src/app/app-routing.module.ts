@@ -22,7 +22,19 @@ const routes: Routes = [
   {
     path: 'events',
     loadChildren: () => import('./pages/events/events.module').then( m => m.EventsPageModule)
+  },  {
+    path: 'my-tickets',
+    loadChildren: () => import('./pages/my-tickets/my-tickets.module').then( m => m.MyTicketsPageModule)
   },
+  {
+    path: 'user',
+    loadChildren: () => import('./pages/user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'super-user',
+    loadChildren: () => import('./pages/super-user/super-user.module').then( m => m.SuperUserPageModule)
+  },
+
 ];
 
 @NgModule({
