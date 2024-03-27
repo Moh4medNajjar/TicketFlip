@@ -1,0 +1,17 @@
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Change color as needed */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: black;
+  }
+  
+  .fa-home, .fa-heart, .fa-calendar-days, .fa-ticket {
+    font-size: 25px;
+  }
+  

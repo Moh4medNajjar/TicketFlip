@@ -1,13 +1,14 @@
 <ion-content>
   <div class="avatar-container">
     <ion-avatar>
+      <i class="fa-solid fa-bars"></i>
       <img src="../../../../assets/avatar.png" alt="Avatar">
     </ion-avatar>
     <ion-label>Hamdi Baccar</ion-label>
   </div>
   <div class="events">
     <h2>Your events</h2>
-    <ion-button id="plus" color="white"><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+    <ion-button id="plus" color="white"><i class="fa-solid fa-circle-plus"></i></ion-button>
   </div>
   <div class="adding-layout">
     <ion-label position="floating">Title</ion-label>
@@ -46,4 +47,5 @@
   <ion-button (click)="cancel()" name="cancel">Cancel</ion-button>
 </div>
 </div>
+<app-bottom-bar></app-bottom-bar>
 </ion-content>

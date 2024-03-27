@@ -101,5 +101,21 @@ ion-button[name="buy"]{
   margin-bottom: 10px;
   margin-left: 8px;
 }
+.fa-bars {
+  color: white;
+  position: absolute;
+  font-size: 26px;
+  top: 20px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  z-index: 1; /* Ensure the icon appears above the image */
+}
+.fa-heart {
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  top: 20px; /* Adjust to match the top value of the other icon */
+  right: 10px; /* Adjust as needed */
+  z-index: 1; /* Ensure the icon appears above the image */
+}
 
   

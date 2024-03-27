@@ -109,7 +109,7 @@ ion-button[name="pay"]{
   }
   
   .ticket-selector ion-input {
-    width: 46px;
+    width: 50px;
     height: 46px;
     border: 1px solid lightgray; /* Assuming light gray border */
     background-color: white;
@@ -118,6 +118,28 @@ ion-button[name="pay"]{
     padding: 5px; /* Add some padding inside the input */
     text-align: center; /* Center text within input */
     font-size: 1rem; /* Adjust font size as needed */
+  }
+  .fa-plus{
+    font-size: 23px;
+  }
+  .fa-minus{
+    font-size: 23px;
+  }
+  .fa-bars {
+    color: white;
+    position: absolute;
+    font-size: 26px;
+    top: 20px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    z-index: 1; /* Ensure the icon appears above the image */
+  }
+  .fa-heart {
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 20px; /* Adjust to match the top value of the other icon */
+    right: 10px; /* Adjust as needed */
+    z-index: 1; /* Ensure the icon appears above the image */
   }
 
   

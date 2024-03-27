@@ -1,6 +1,8 @@
 <ion-content>
   <div class="evbooking-layout">
   <ion-card class="evbooking-container">
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-heart"></i>
     <img src="../../../../assets/event.jpeg" alt="Event Image">
   </ion-card>
   <h2>Royal Hall Concert</h2>
@@ -15,11 +17,12 @@
     <div class="event-booking">
       <h1>Tickets</h1>
       <div class="ticket-selector">
-        <ion-button (click)="decrement()" color="white"><ion-icon name="remove-circle-outline"></ion-icon></ion-button>
+        <ion-button (click)="decrement()" color="white"><i class="fa-solid fa-minus"></i></ion-button>
         <ion-input [(ngModel)]="number" type="number" class="number-input"></ion-input>
-        <ion-button (click)="increment()" color="white"><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+        <ion-button (click)="increment()" color="white"><i class="fa-solid fa-plus"></i></ion-button>
   </div>
   </div>
 <ion-button color="#6236FF" name="pay">Proceed to payment</ion-button>
 </div>
+<app-bottom-bar></app-bottom-bar>
 </ion-content>
