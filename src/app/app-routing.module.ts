@@ -34,6 +34,14 @@ const routes: Routes = [
     path: 'super-user',
     loadChildren: () => import('./pages/super-user/super-user.module').then( m => m.SuperUserPageModule)
   },
+  {
+    path: 'home-page',
+    loadChildren: () => import('./pages/home-page/home-page.module').then( m => m.HomePagePageModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./pages/search/search.module').then( m => m.SearchPageModule)
+  },
 
 ];
 
